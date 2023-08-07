@@ -5,6 +5,7 @@
 typedef struct {
     char name[50];
     int health;
+    int damage;
     Weapon weapon;
 } Player;
 

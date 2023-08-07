@@ -5,6 +5,7 @@ Player createPlayer(const char *name) {
     Player newPlayer;
     strcpy(newPlayer.name, name);
     newPlayer.health = 100;
+    newPlayer.damage = 15;
     return newPlayer;
 }
 

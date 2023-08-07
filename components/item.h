@@ -10,12 +10,14 @@ extern Item createItem(const char* name,int quntity,Function function);
 
 extern void getItemName(const Item *item);
 
-extern void createItemSpecial(const char* name,int quntity,int value);
+extern Item createItemSpecial(const char* name,int quntity,int value);
 
 extern void deleteItemSpecial(const char* name,int quntity,int value);
 
-extern void useItem(const char* name,int quntity,Function function);
+extern void useItem(const char* name,int quntity,Function function,Player *player);
 
-extern void dropItem(const char* name,int quntity,Function function);
+extern void useItemOnEnemy(const char* name,int quntity,Function *function,Enemy *enemy);
+
+extern void dropItem(const char* name,int quntity,Function function,Player *player);
 
 #endif
