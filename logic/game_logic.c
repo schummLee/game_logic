@@ -29,12 +29,12 @@ void playerEncounterEnemy(Player *player, Enemy *enemy) {
 
 void playerEncounterBoss(Player *player, Boss *boss) {
     printf("Player encounters Boss: %s\n", boss->name);
-   attackPlayer(boss,player);
+    attackPlayer(boss,player);
 }
 
 void playerPickUpWeapon(Player *player, Weapon *weapon) {
     printf("Player picks up weapon: %s\n", weapon->name);
-    // Update player's weapon
+    player->weapon = createWeapon(weapon->name,weapon->damage);
 }
 
 void playGame(GameData *game) {
@@ -64,22 +64,3 @@ void playGame(GameData *game) {
     printf("\nGame over!\n");
 }
 
-// int main() {
-//     srand(time(NULL));
-
-//     GameData game;
-//     strcpy(game.player.name, "Player");
-//     game.player.health = 100;
-
-//     strcpy(game.enemy.name, "Enemy");
-//     game.enemy.health = 50;
-
-//     strcpy(game.boss.name, "Boss");
-//     game.boss.health = 200;
-
-//     strcpy(game.weapon.name, "Weapon");
-
-//     playGame(&game);
-
-//     return 0;
-// }
