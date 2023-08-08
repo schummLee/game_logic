@@ -5,16 +5,16 @@ typedef struct {
     char name[50];
     int health;
     int damage;
-} NPC;
+} Npc;
 
-NPC createNPC(const char *name, int health, int damage);
+extern Npc createNPC(const char *name, int health, int damage);
 
-void interactWithNPC(NPC *npc);
+extern void interactWithNPC(Npc *npc);
 
-const char* getNPCName(const NPC *npc);
+extern const char* getNPCName(const Npc *npc);
 
-int getNPCHealth(const NPC *npc);
+extern int getNPCHealth(const Npc *npc);
 
-int getNPCDamage(const NPC *npc);
+extern int getNPCDamage(const Npc *npc);
 
 #endif

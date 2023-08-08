@@ -11,7 +11,7 @@ typedef struct {
     int maxCapacity;
 } Storage;
 
-extern void createStorage(Storage *storage, int capacity);
+extern Storage createStorage(Storage *storage, int capacity);
 
 extern int addItemToStorage(Storage *storage, const Item *item);
 

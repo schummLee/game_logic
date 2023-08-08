@@ -28,9 +28,9 @@ extern void playerEncounterNpc(
     int numWeapons
 );
 
-extern void playerEnterHome(Player *player, Map *home, int itemIndex);
+extern void playerEnterHome(Player *player, Home *home, int itemIndex);
 
-extern void playerEnterShop(Player *player, Map *shop);
+extern void playerEnterShop(Player *player, Shop *shop);
 
 extern void playerEnterWildy(
     Player *player,  Enemy *enemies, 
