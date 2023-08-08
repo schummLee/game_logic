@@ -6,15 +6,16 @@ typedef struct {
     char name[50];
     int health;
     int damage;
+    int gold;
     Weapon weapon;
 } Player;
 
-Player createPlayer(const char *name);
+extern Player createPlayer(const char *name);
 
-void updateHealth(Player *player, int newHealth);
+extern void updateHealth(Player *player, int newHealth);
 
-const char* getPlayerName(const Player *player);
+extern const char* getPlayerName(const Player *player);
 
-int getPlayerHealth(const Player *player);
+extern int getPlayerHealth(const Player *player);
 
 #endif

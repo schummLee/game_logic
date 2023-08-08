@@ -6,6 +6,7 @@ Player createPlayer(const char *name) {
     strcpy(newPlayer.name, name);
     newPlayer.health = 100;
     newPlayer.damage = 15;
+    newPlayer.gold = 100;
     return newPlayer;
 }
 
@@ -19,4 +20,8 @@ const char* getPlayerName(const Player *player) {
 
 int getPlayerHealth(const Player *player) {
     return player->health;
+}
+
+int getPlayerGold(const Player *player) {
+    return player->gold;
 }

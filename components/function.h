@@ -13,7 +13,6 @@ extern const char* getFunctionName(const Function *function);
 
 extern void functionEffect(Function *function, Player *player);
 
-
 extern void functionEffectToEnemy(Function *function,Enemy *enemy);
 
 #endif
