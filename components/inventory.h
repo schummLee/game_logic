@@ -10,7 +10,7 @@ typedef struct {
     int numItems;
 } Inventory;
 
-extern void createInventory(Inventory *inventory);
+extern Inventory createInventory(Inventory *inventory);
 
 extern int addItemToInventory(Inventory *inventory, const Item *item);
 

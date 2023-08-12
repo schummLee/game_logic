@@ -17,19 +17,11 @@
 #include "inventory.h"
 #include "npc.h"
 #include "game.h"
+#include "effects.h"
 #define NUM_MAPS 5
 #define NUM_ENEMIES 3
 #define NUM_BOSSES 2
 #define NUM_WEAPONS 3
-
-typedef struct {
-    char name[MAX_STRING_LENGTH]; int health;
-} Entity;
-
-typedef struct {
-    Player player; Enemy enemy; Boss boss; Weapon weapon; Map map; Item item; 
-    char matrix[MATRIX_SIZE][MATRIX_SIZE][MAX_STRING_LENGTH];
-} GameData;
 
 void playerEncounterEnemy(Player *player, Enemy *enemy) {
     printf("Player encounters: %s\n", enemy->name);
@@ -59,7 +51,7 @@ void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapo
             if (numItems > 0) {
                 int itemIndex = rand() % numItems;
                 printf("The NPC offers to sell an item: %s\n", items[itemIndex].name);
-                // Implement logic for selling the item to the player
+                
             } else {
                 printf("The NPC has no items to sell.\n");
             }
