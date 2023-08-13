@@ -2,22 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "matrix_generator.h"  
-#include "player.h"  
-#include "enemy.h"  
-#include "boss.h"  
-#include "weapon.h"  
-#include "map.h" 
-#include "item.h"
-#include "function.h"
+#include "../static/matrix_generator.h"  
+#include "player_logic.c"  
+#include "enemy_logic.c"  
+#include "boss_logic.c"  
+#include "weapon_logic.c"  
+#include "map_logic.c" 
+#include "item_logic.c"
+#include "function_logic.c"
 #include "effects.h" 
-#include "shop.h"
-#include "home.h"
-#include "storage.h"
-#include "inventory.h"
-#include "npc.h"
-#include "game.h"
-#include "effects.h"
+#include "shop_logic.c"
+#include "home_logic.c"
+#include "storage_logic.c"
+#include "inventory_logic.c"
+#include "npc_logic.c"
 #define NUM_MAPS 5
 #define NUM_ENEMIES 3
 #define NUM_BOSSES 2
