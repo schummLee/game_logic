@@ -26,10 +26,10 @@ extern int getPlayerHealth(const Player *player);
 
 extern int getPlayerGold(const Player *player);
 
-extern void attackEnemy(Player *player, Enemy enemy);
+extern void attackEnemy(Player *player, Enemy *enemy);
 
-extern void attackBoss(Player *player, Boss boss);
+extern void attackBoss(Player *player, Boss *boss);
 
-extern void spendGold(Player *player, Shop shop, Npc npc);
+extern void spendGold(Player *player, Shop *shop, Npc *npc);
 
 #endif

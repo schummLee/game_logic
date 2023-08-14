@@ -36,7 +36,7 @@ void playerPickUpWeapon(Player *player, Weapon *weapon) {
     player->weapon = createWeapon(weapon->name,weapon->damage);
 }
 
-void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, int numItems, int numWeapons) {
+void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, Shop *shop, int numItems, int numWeapons) {
     printf("Player encounters NPC: %s\n", npc->name);
 
     int interactionChoice = rand() % 3; 
@@ -49,7 +49,7 @@ void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapo
             if (numItems > 0) {
                 int itemIndex = rand() % numItems;
                 printf("The NPC offers to sell an item: %s\n", items[itemIndex].name);
-                
+                spendGold(player,shop,npc);
             } else {
                 printf("The NPC has no items to sell.\n");
             }
@@ -60,7 +60,7 @@ void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapo
             if (giveawayChoice == 0 && numWeapons > 0) {
                 int weaponIndex = rand() % numWeapons;
                 printf("The NPC gives you a weapon: %s\n", weapons[weaponIndex].name);
-                // Implement logic for giving the weapon to the player
+                player->weapon = weapons[weaponIndex];
             } else if (numItems > 0) {
                 int itemIndex = rand() % numItems;
                 printf("The NPC gives you an item: %s\n", items[itemIndex].name);
