@@ -10,6 +10,7 @@
 typedef struct {
     char name[50]; int health; int maxHealth; int damage;
     int gold; int debuffImmunity; int encounterChance;
+    int poisonResistance; int magicResistance;
     Weapon weapon; Inventory inventory;
 } Player;
 

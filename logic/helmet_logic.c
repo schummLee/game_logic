@@ -8,7 +8,6 @@ void initializeHelmet(Helmet *helmet, const char *name, int defense, int durabil
     helmet->visionBonus = visionBonus;
 }
 
-// Print the details of a helmet
 void printHelmet(const Helmet *helmet) {
     printf("Helmet Name: %s\n", helmet->name);
     printf("Defense: %d\n", helmet->defense);
@@ -16,12 +15,3 @@ void printHelmet(const Helmet *helmet) {
     printf("Vision Bonus: %d\n", helmet->visionBonus);
 }
 
-int main() {
-    Helmet myHelmet;
-    initializeHelmet(&myHelmet, "Steel Helmet", 15, 40, 5);
-
-    printf("Helmet Details:\n");
-    printHelmet(&myHelmet);
-
-    return 0;
-}
