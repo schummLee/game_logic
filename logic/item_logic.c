@@ -8,7 +8,7 @@ Item createItem(const char* name,int quntity,Function *function) {
     Item newItem;
     strcpy(newItem.name, name);
     newItem.quntity = quntity;
-    newItem.function = function;
+    newItem.function = *function;
     return newItem;
 }
 

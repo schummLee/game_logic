@@ -39,6 +39,7 @@ extern void playerEncounterNpc(
     Player *player, Npc *npc, 
     Boss *boss, Item *items, 
     Weapon *weapons, 
+    Shop *shop,
     int numItems, 
     int numWeapons
 );

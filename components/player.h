@@ -8,12 +8,9 @@
 #include "inventory.h"
 
 typedef struct {
-    char name[50];
-    int health;
-    int damage;
-    int gold;
-    Weapon weapon;
-    Inventory inventory;
+    char name[50]; int health; int maxHealth; int damage;
+    int gold; int debuffImmunity; int encounterChance;
+    Weapon weapon; Inventory inventory;
 } Player;
 
 extern Player createPlayer(const char *name);

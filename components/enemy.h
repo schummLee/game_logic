@@ -2,7 +2,7 @@
 #define ENEMY_H
 
 typedef struct {
-    char name[50]; int health; int damage;
+    char name[50]; int health; int damage; int buffAmount; int poisonChance;
 } Enemy;
 
 Enemy createEnemy(const char *name, int health, int damage);

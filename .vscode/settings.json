@@ -2,6 +2,7 @@
     "C_Cpp.default.compilerPath": "",
     "files.associations": {
         "weapon.h": "c",
-        "weapon_logic.c": "cpp"
+        "weapon_logic.c": "cpp",
+        "typeinfo": "c"
     }
 }

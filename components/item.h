@@ -3,7 +3,8 @@
 #include "function.h"
 
 typedef struct {
-    char name[50]; int quntity; int value; Function function;
+    char name[50]; int quntity; int value; Function function; int poisonResistance;
+    int magicResistance;
 } Item;
 
 extern Item createItem(const char* name,int quntity,Function *function);
