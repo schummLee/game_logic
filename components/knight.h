@@ -5,10 +5,10 @@
 #include "helmet.h"
 
 typedef struct {
-    char name[50]; int health; Armor armor;  Helmet helmet; 
+    char name[50]; int health; Armor armor;  Helmet helmet; int buyCost;
 } Knight;
 
-void initializeKnight(Knight *knight, const char *name, int health, const Armor *armor, const Helmet *helmet);
+void initializeKnight(Knight *knight, const char *name, int health, const Armor *armor, const Helmet *helmet, int buyCost);
 
 void printKnight(const Knight *knight);
 

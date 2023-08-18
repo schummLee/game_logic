@@ -5,9 +5,10 @@
 typedef struct {
     char name[50];
     int damage;
+    int value;
 } Weapon;
 
-Weapon createWeapon(const char *name, int damage);
+Weapon createWeapon(const char *name, int damage, int value);
 
 const char* getWeaponName(const Weapon *weapon);
 

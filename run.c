@@ -1,4 +1,4 @@
-#include "kernel/game.c"
+#include "../kernel/game.c"
 #include <string.h>
 #include <stdlib.h>
 

@@ -310,7 +310,7 @@ void hallOfFame(Player *player, Boss *bosses, int numBosses) {
     player->inventory = newInventory;
 }
 
-void encounterEnemyWithHeavyArmor(Player *player, Enemy *enemy, Armor *armors, int numArmors, Helmet *helmets, int numHelmets, DefenseItem *defenseItems, int numDefenseItems) {
+void encounterEnemyWithHeavyArmor(Player *player, Enemy *enemy, Armor *armors, int numArmors, Helmet *helmets, int numHelmets, Item *defenseItems, int numDefenseItems) {
     printf("You encounter an enemy with heavy armor!\n");
 
     // Implement player-enemy combat logic here
@@ -577,23 +577,15 @@ void powerOfHeaven(Player *player) {
     printf("Your max health has increased by %d. Your damage has increased by %d.\n", healthIncrease, damageIncrease);
 }
 
-
-typedef struct {
-    // ... (other attributes)
-    int temperature; // Temperature of the map
-} GameData;
-
-void applyTemperatureEffects(Player *player, Enemy *enemies, int numEnemies, Boss *boss, int temperature) {
+void applyTemperatureEffects(Player *player, Enemy *enemies, Boss *boss, int temperature) {
     if (temperature > 30) {
         printf("It's extremely hot!\n");
 
         // Apply temperature-related effects to the player and enemies
         player->health -= 10; // Player loses health due to extreme heat
-
-        for (int i = 0; i < numEnemies; i++) {
-            enemies[i].damage -= 5; // Enemies' damage is reduced due to sluggishness from heat
-        }
-
+        
+        enemies.damage -= 5; // Enemies' damage is reduced due to sluggishness from heat
+        
         if (boss != NULL) {
             boss->damage -= 10; // Boss's damage is significantly reduced due to heat fatigue
         }
@@ -603,9 +595,7 @@ void applyTemperatureEffects(Player *player, Enemy *enemies, int numEnemies, Bos
         // Apply temperature-related effects to the player and enemies
         player->health -= 5; // Player loses health due to extreme cold
 
-        for (int i = 0; i < numEnemies; i++) {
-            enemies[i].health -= 10; // Enemies lose health due to the cold
-        }
+        enemies[i].health -= 10; // Enemies lose health due to the cold
 
         if (boss != NULL) {
             boss->health -= 20; // Boss loses health due to the cold
@@ -734,7 +724,7 @@ void playerEncounterBoss(Player *player, Boss *boss) {
 
 void playerPickUpWeapon(Player *player, Weapon *weapon) {
     printf("Player picks up weapon: %s\n", weapon->name);
-    player->weapon = createWeapon(weapon->name,weapon->damage);
+    player->weapon = createWeapon(weapon->name,weapon->damage,weapon->value);
 }
 
 void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, Shop *shop, int numItems, int numWeapons) {

@@ -16,8 +16,13 @@
 #include "npc.h"
 #include "game.h"
 #include "effects.h"
+#include "knight.h"
+#include "stranger.h"
+#include "helmet.h"
+#include "armor.h"
+#include "daytime.h"
 #define MAX_STRING_LENGTH 100
-#define MATRIX_SIZE 5
+#define MATRIX_SIZE 3
 
 typedef struct {
     char name[MAX_STRING_LENGTH]; int health;
@@ -26,9 +31,15 @@ typedef struct {
 typedef struct {
     Player player; Enemy enemy; Boss boss; Weapon weapon; Map map; Item item;
     Function function; Npc npc; Item item; Home home; Shop shop; Storage storage;
-    Inventory inventory;
+    Inventory inventory; Knight knight; Armor armor; Helmet helmet;int temperature;
+    Stranger stranger; DayTime daytime; 
     char matrix[MATRIX_SIZE][MATRIX_SIZE][MAX_STRING_LENGTH];
 } GameData;
+
+typedef struct {
+    const char *value; void (*function)();
+} MatrixFunctionMapping;
+
 extern void playerEncounterEnemy(Player *player, Enemy *enemy); 
 
 extern void playerEncounterBoss(Player *player, Boss *boss); 
