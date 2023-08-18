@@ -23,7 +23,7 @@ MatrixFunctionMapping functionMappings[] = {
     {_encounterHugeAmountOfEnemies, encounterHugeAmountOfEnemies},
     {_crossSwitchMatrices, crossSwitchMatrices},
     {_enterLightningStrikeArea, enterLightningStrikeArea},
-    {_enterForest, _enterForest},
+    {_enterForest, enterForest},
     {_powerOfHeaven, powerOfHeaven},
     {_applyTemperatureEffects, applyTemperatureEffects},
     {_playerEnterCampus, playerEnterCampus},
