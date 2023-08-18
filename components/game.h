@@ -40,6 +40,33 @@ typedef struct {
     const char *value; void (*function)();
 } MatrixFunctionMapping;
 
+typedef void (*FunctionWithPlayerParam)(Player *);
+typedef void (*FunctionEnterColdArea)(Player *,Enemy *,Item *,int,DayTime);
+typedef void (*FunctionEnterDesert)(Player *,Enemy *, int, Item *, int, DayTime);
+typedef void (*FunctionCombatWithStranger)(Player *, Stranger *);
+typedef void (*FunctionLightningStrikeAndRain)(Player *, Enemy *, int, Item *, int);
+typedef void (*FunctionGetRandomItem)(Player *, Boss *, int, Item *, int);
+typedef void (*FunctionExploreUnknownArea)(Player *, Weapon *, int, Armor *, int, Item *, int);
+typedef void (*FunctionNightTimeEncounter)(Player *, Enemy *, Item *, int);
+typedef void (*FunctionRecruitKnight)(Player *, Knight *);
+typedef void (*FunctionHallOfFame)(Player *, Boss *, int);
+typedef void (*FunctionEncounterEnemyWithHeavyArmor)(Player *, Enemy *, Armor *,int, Helmet *, int, Item * ,int);
+typedef void (*FunctionDefeatMultiElementBoss)(Player *, Boss *);
+typedef void (*FunctionSimulateRainfall)(Player *, Enemy *, int, Item *, int);
+typedef void (*FunctionEnterProhibitedArea)(Player *, Enemy *);
+typedef void (*FunctionEnterRainbowBridgeToHeaven)(Player *, Item *, int, Weapon *, int);
+typedef void (*FunctionEncounterHugeAmountOfEnemies)(Player *, Enemy *, int , Item *, int, Weapon *, int);
+typedef void (*FunctionCrossSwitchMatrices)(int, int);
+typedef void (*FunctionEnterLightningStrikeArea)(Player *, Item *, int, Weapon *, int);
+typedef void (*FunctionApplyTemperatureEffects)(Player *, Enemy *, Boss *, int);
+typedef void (*FunctionPlayerEnterCampus)(Player *, Shop *, Item *, int, Weapon *, int);
+typedef void (*FunctionPlayerOpenGift)(Player *,Boss *, int);
+typedef void (*FunctionPlayerEncounterEnemy)(Player *,Enemy *);
+typedef void (*FunctionPlayerEncounterBoss)(Player *, Boss *);
+typedef void (*FunctionPlayerEncounterNpc)(Player *, Npc *, Boss *, Item *, Weapon *, Shop *, int, int);
+typedef void (*FunctionPlayerEnterWildy)(Player *, Enemy *, int, Npc *, int, Item *, int, Weapon *, int);
+typedef void (*FunctionPlayerPickupItem)(Player *, Item *, int, Weapon *, int);
+
 extern void playerEncounterEnemy(Player *player, Enemy *enemy); 
 
 extern void playerEncounterBoss(Player *player, Boss *boss); 

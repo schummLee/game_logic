@@ -584,7 +584,7 @@ void applyTemperatureEffects(Player *player, Enemy *enemies, Boss *boss, int tem
         // Apply temperature-related effects to the player and enemies
         player->health -= 10; // Player loses health due to extreme heat
         
-        enemies.damage -= 5; // Enemies' damage is reduced due to sluggishness from heat
+        enemies->damage -= 5; // Enemies' damage is reduced due to sluggishness from heat
         
         if (boss != NULL) {
             boss->damage -= 10; // Boss's damage is significantly reduced due to heat fatigue
@@ -595,7 +595,7 @@ void applyTemperatureEffects(Player *player, Enemy *enemies, Boss *boss, int tem
         // Apply temperature-related effects to the player and enemies
         player->health -= 5; // Player loses health due to extreme cold
 
-        enemies[i].health -= 10; // Enemies lose health due to the cold
+        enemies->health -= 10; // Enemies lose health due to the cold
 
         if (boss != NULL) {
             boss->health -= 20; // Boss loses health due to the cold

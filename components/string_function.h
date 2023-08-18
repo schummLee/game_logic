@@ -1,5 +1,7 @@
 #ifndef STRING_VARIABLES_H
 #define STRING_VARIABLES_H
+#define NUM_MAPPINGS (sizeof(functionMappings) / sizeof(MatrixFunctionMapping))
+
 
 extern char _coldArea[100] = "coldArea";
 extern char _desert[100] = "desert";
