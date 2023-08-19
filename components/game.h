@@ -24,6 +24,33 @@
 #define MAX_STRING_LENGTH 100
 #define MATRIX_SIZE 3
 
+// typedef void (*FunctionWithPlayerParam)(Player *);
+// typedef void (*FunctionEnterColdArea)(Player *,Enemy *,Item *,int,DayTime);
+// typedef void (*FunctionEnterDesert)(Player *,Enemy *, int, Item *, int, DayTime);
+// typedef void (*FunctionCombatWithStranger)(Player *, Stranger *);
+// typedef void (*FunctionLightningStrikeAndRain)(Player *, Enemy *, int, Item *, int);
+// typedef void (*FunctionGetRandomItem)(Player *, Boss *, int, Item *, int);
+// typedef void (*FunctionExploreUnknownArea)(Player *, Weapon *, int, Armor *, int, Item *, int);
+// typedef void (*FunctionNightTimeEncounter)(Player *, Enemy *, Item *, int);
+// typedef void (*FunctionRecruitKnight)(Player *, Knight *);
+// typedef void (*FunctionHallOfFame)(Player *, Boss *, int);
+// typedef void (*FunctionEncounterEnemyWithHeavyArmor)(Player *, Enemy *, Armor *,int, Helmet *, int, Item * ,int);
+// typedef void (*FunctionDefeatMultiElementBoss)(Player *, Boss *);
+// typedef void (*FunctionSimulateRainfall)(Player *, Enemy *, int, Item *, int);
+// typedef void (*FunctionEnterProhibitedArea)(Player *, Enemy *);
+// typedef void (*FunctionEnterRainbowBridgeToHeaven)(Player *, Item *, int, Weapon *, int);
+// typedef void (*FunctionEncounterHugeAmountOfEnemies)(Player *, Enemy *, int , Item *, int, Weapon *, int);
+// typedef void (*FunctionCrossSwitchMatrices)(int, int);
+// typedef void (*FunctionEnterLightningStrikeArea)(Player *, Item *, int, Weapon *, int);
+// typedef void (*FunctionApplyTemperatureEffects)(Player *, Enemy *, Boss *, int);
+// typedef void (*FunctionPlayerEnterCampus)(Player *, Shop *, Item *, int, Weapon *, int);
+// typedef void (*FunctionPlayerOpenGift)(Player *,Boss *, int);
+// typedef void (*FunctionPlayerEncounterEnemy)(Player *,Enemy *);
+// typedef void (*FunctionPlayerEncounterBoss)(Player *, Boss *);
+// typedef void (*FunctionPlayerEncounterNpc)(Player *, Npc *, Boss *, Item *, Weapon *, Shop *, int, int);
+// typedef void (*FunctionPlayerEnterWildy)(Player *, Enemy *, int, Npc *, int, Item *, int, Weapon *, int);
+// typedef void (*FunctionPlayerPickupItem)(Player *, Item *, int, Weapon *, int);
+
 typedef struct {
     char name[MAX_STRING_LENGTH]; int health;
 } Entity;
@@ -32,40 +59,212 @@ typedef struct {
     Player player; Enemy enemy; Boss boss; Weapon weapon; Map map; Item item;
     Function function; Npc npc; Item item; Home home; Shop shop; Storage storage;
     Inventory inventory; Knight knight; Armor armor; Helmet helmet;int temperature;
-    Stranger stranger; DayTime daytime; 
+    Stranger stranger; DayTime daytime; int numLoot; int someIntParam; int anotherIntParam;
+    int yetAnotherIntParam;
     char matrix[MATRIX_SIZE][MATRIX_SIZE][MAX_STRING_LENGTH];
 } GameData;
 
 typedef struct {
-    const char *value; void (*function)();
-} MatrixFunctionMapping;
+    const char *value;
+    void (*function)(void *);
+    void *params; 
+} DynamicFunctionMapping;
 
-typedef void (*FunctionWithPlayerParam)(Player *);
-typedef void (*FunctionEnterColdArea)(Player *,Enemy *,Item *,int,DayTime);
-typedef void (*FunctionEnterDesert)(Player *,Enemy *, int, Item *, int, DayTime);
-typedef void (*FunctionCombatWithStranger)(Player *, Stranger *);
-typedef void (*FunctionLightningStrikeAndRain)(Player *, Enemy *, int, Item *, int);
-typedef void (*FunctionGetRandomItem)(Player *, Boss *, int, Item *, int);
-typedef void (*FunctionExploreUnknownArea)(Player *, Weapon *, int, Armor *, int, Item *, int);
-typedef void (*FunctionNightTimeEncounter)(Player *, Enemy *, Item *, int);
-typedef void (*FunctionRecruitKnight)(Player *, Knight *);
-typedef void (*FunctionHallOfFame)(Player *, Boss *, int);
-typedef void (*FunctionEncounterEnemyWithHeavyArmor)(Player *, Enemy *, Armor *,int, Helmet *, int, Item * ,int);
-typedef void (*FunctionDefeatMultiElementBoss)(Player *, Boss *);
-typedef void (*FunctionSimulateRainfall)(Player *, Enemy *, int, Item *, int);
-typedef void (*FunctionEnterProhibitedArea)(Player *, Enemy *);
-typedef void (*FunctionEnterRainbowBridgeToHeaven)(Player *, Item *, int, Weapon *, int);
-typedef void (*FunctionEncounterHugeAmountOfEnemies)(Player *, Enemy *, int , Item *, int, Weapon *, int);
-typedef void (*FunctionCrossSwitchMatrices)(int, int);
-typedef void (*FunctionEnterLightningStrikeArea)(Player *, Item *, int, Weapon *, int);
-typedef void (*FunctionApplyTemperatureEffects)(Player *, Enemy *, Boss *, int);
-typedef void (*FunctionPlayerEnterCampus)(Player *, Shop *, Item *, int, Weapon *, int);
-typedef void (*FunctionPlayerOpenGift)(Player *,Boss *, int);
-typedef void (*FunctionPlayerEncounterEnemy)(Player *,Enemy *);
-typedef void (*FunctionPlayerEncounterBoss)(Player *, Boss *);
-typedef void (*FunctionPlayerEncounterNpc)(Player *, Npc *, Boss *, Item *, Weapon *, Shop *, int, int);
-typedef void (*FunctionPlayerEnterWildy)(Player *, Enemy *, int, Npc *, int, Item *, int, Weapon *, int);
-typedef void (*FunctionPlayerPickupItem)(Player *, Item *, int, Weapon *, int);
+typedef struct {
+    Player *player;
+} FunctionWithPlayerParamParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    Item *item;
+    int numLoot;
+    DayTime timeOfDay;
+} FunctionEnterColdAreaParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Item *item;
+    int anotherIntParam;
+    DayTime timeOfDay;
+} FunctionEnterDesertParams;
+
+typedef struct {
+    Player *player;
+    Stranger *stranger;
+} FunctionCombatWithStrangerParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Item *item;
+    int anotherIntParam;
+} FunctionLightningStrikeAndRainParams;
+
+typedef struct {
+    Player *player;
+    Boss *boss;
+    int someIntParam;
+    Item *item;
+    int anotherIntParam;
+} FunctionGetRandomItemParams;
+
+typedef struct {
+    Player *player;
+    Weapon *weapon;
+    int someIntParam;
+    Armor *armor;
+    int anotherIntParam;
+    Item *item;
+    int yetAnotherIntParam;
+} FunctionExploreUnknownAreaParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    Item *item;
+    int numLoot;
+} FunctionNightTimeEncounterParams;
+
+typedef struct {
+    Player *player;
+    Knight *knight;
+} FunctionRecruitKnightParams;
+
+typedef struct {
+    Player *player;
+    Boss *boss;
+    int someIntParam;
+} FunctionHallOfFameParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    Armor *armor;
+    int armorIntParam;
+    Helmet *helmet;
+    int helmetIntParam;
+    Item *item;
+    int itemIntParam;
+} FunctionEncounterEnemyWithHeavyArmorParams;
+
+typedef struct {
+    Player *player;
+    Boss *boss;
+    int someIntParam;
+} FunctionDefeatMultiElementBossParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Item *item;
+    int anotherIntParam;
+} FunctionSimulateRainfallParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+} FunctionEnterProhibitedAreaParams;
+
+typedef struct {
+    Player *player;
+    Item *item;
+    int someIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionEnterRainbowBridgeToHeavenParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Item *item;
+    int anotherIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionEncounterHugeAmountOfEnemiesParams;
+
+typedef struct {
+    int intParam1;
+    int intParam2;
+} FunctionCrossSwitchMatricesParams;
+
+typedef struct {
+    Player *player;
+    Item *item;
+    int someIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionEnterLightningStrikeAreaParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    Boss *boss;
+    int someIntParam;
+} FunctionApplyTemperatureEffectsParams;
+
+typedef struct {
+    Player *player;
+    Shop *shop;
+    Item *item;
+    int itemIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionPlayerEnterCampusParams;
+
+typedef struct {
+    Player *player;
+    Boss *boss;
+    int someIntParam;
+} FunctionPlayerOpenGiftParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+} FunctionPlayerEncounterEnemyParams;
+
+typedef struct {
+    Player *player;
+    Boss *boss;
+} FunctionPlayerEncounterBossParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Npc *npc;
+    int npcIntParam;
+    Item *item;
+    Weapon *weapon;
+    Shop *shop;
+    int shopIntParam;
+    int anotherIntParam;
+} FunctionPlayerEncounterNpcParams;
+
+typedef struct {
+    Player *player;
+    Enemy *enemy;
+    int someIntParam;
+    Npc *npc;
+    int npcIntParam;
+    Item *item;
+    int itemIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionPlayerEnterWildyParams;
+
+typedef struct {
+    Player *player;
+    Item *item;
+    int itemIntParam;
+    Weapon *weapon;
+    int weaponIntParam;
+} FunctionPlayerPickupItemParams;
 
 extern void playerEncounterEnemy(Player *player, Enemy *enemy); 
 

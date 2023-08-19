@@ -4,37 +4,37 @@
 #include "../components/string_function.h"
 #include "../components/game.h"
 
-MatrixFunctionMapping functionMappings[] = {
-    {_coldArea, (FunctionEnterColdArea)enterColdArea},
-    {_desert, (FunctionEnterDesert)enterDesert},
-    {_combatWithStranger, (FunctionCombatWithStranger)combatWithStranger},
-    {_acquireImmunityAndDefuff, (FunctionWithPlayerParam)acquireImmunityAndDebuff},
-    {_lightningStrikeAndRain, (FunctionLightningStrikeAndRain)lightningStrikeAndRain},
-    {_getRandomInfo, (FunctionGetRandomItem)getRandomInfo},
-    {_exploreUnknownArea, (FunctionExploreUnknownArea)exploreUnknownArea},
-    {_nightTimeEncounter, (FunctionNightTimeEncounter)nightTimeEncounter},
-    {_recruitKnight, (FunctionRecruitKnight)recruitKnight},
-    {_hallOfFame, (FunctionHallOfFame)hallOfFame},
-    {_encounterEnemyWithHeavyArmor, (FunctionencounterEnemyWithHeavyArmor)encounterEnemyWithHeavyArmor},
-    {_defeatMultiElementBoss, (FunctionDefeatMultiElementBoss)defeatMultiElementBoss},
-    {_simulateRainfall, (FunctionSimulateRainfall)simulateRainfall},
-    {_enterProhibitedArea, (FunctionEnterProhibitedArea)enterProhibitedArea},
-    {_increaseDamageRandomPercent, (FunctionWithPlayerParam)increaseDamageRandomPercent},
-    {_enterRainbowBridgeToHeaven, (FunctionEnterRainbowBridgeToHeaven)enterRainbowBridgeToHeaven},
-    {_encounterHugeAmountOfEnemies, (FunctionEncounterHugeAmountOfEnemies)encounterHugeAmountOfEnemies},
-    {_crossSwitchMatrices, (FunctionCrossSwitchMatrices)crossSwitchMatrices},
-    {_enterLightningStrikeArea, (FunctionEnterLightningStrikeArea)enterLightningStrikeArea},
-    {_enterForest, (FunctionWithPlayerParam)enterForest},
-    {_powerOfHeaven, (FunctionWithPlayerParam)powerOfHeaven},
-    {_applyTemperatureEffects, (FunctionApplyTemperatureEffects)applyTemperatureEffects},
-    {_playerEnterCampus, (FunctionPlayerEnterCampus)playerEnterCampus},
-    {_playerRest, (FunctionWithPlayerParam)playerRest},
-    {_playerOpenGift, (FunctionPlayerOpenGift)playerOpenGift},
-    {_playerEncounterEnemy, (FunctionPlayerEncounterEnemy)playerEncounterEnemy},
-    {_playerEncounterBoss, (FunctionPlayerEncounterBoss)playerEncounterBoss},
-    {_playerEnterWildy, (FunctionPlayerEnterWildy)playerEnterWildy},
-    {_playerPickupItem, (FunctionPlayerPickupItem)playerPickupItem},
-    {_playerEncounterNpc, (FunctionPlayerEncounterNpc)playerEncounterNpc},
+DynamicFunctionMapping dynamicfunctionMappings[] = {
+    {_coldArea, (void (*)(void *))enterColdArea, &FunctionColdAreaParams},
+    {_desert, (void (*)(void *))enterDesert, &FunctionDesertParams},
+    {_combatWithStranger, (void (*)(void *))combatWithStranger, &FunctionCombatWithStrangerParams},
+    {_acquireImmunityAndDefuff, (void (*)(void *))acquireImmunityAndDebuff, &FunctionAcquireImmunityAndDefuffParams},
+    {_lightningStrikeAndRain, (void (*)(void *))lightningStrikeAndRain, &FunctionLightningStrikeAndRainParams},
+    {_getRandomInfo, (void (*)(void *))getRandomInfo, &FunctionGetRandomInfoParams},
+    {_exploreUnknownArea, (void (*)(void *))exploreUnknownArea, &FunctionExploreUnknownAreaParams},
+    {_nightTimeEncounter, (void (*)(void *))nightTimeEncounter, &FunctionNightTimeEncounterParams},
+    {_recruitKnight, (void (*)(void *))recruitKnight, &FunctionRecruitKnightParams},
+    {_hallOfFame, (void (*)(void *))hallOfFame, &FunctionHallOfFameParams},
+    {_encounterEnemyWithHeavyArmor, (void (*)(void *))encounterEnemyWithHeavyArmor, &FunctionEncounterEnemyWithHeavyArmorParams},
+    {_defeatMultiElementBoss, (void (*)(void *))defeatMultiElementBoss, &FunctionDefeatMultiElementBossParams},
+    {_simulateRainfall, (void (*)(void *))simulateRainfall, &FunctionSimulateRainfallParams},
+    {_enterProhibitedArea, (void (*)(void *))enterProhibitedArea, &FunctionEnterProhibitedAreaParams},
+    {_increaseDamageRandomPercent, (void (*)(void *))increaseDamageRandomPercent, &FunctionIncreaseDamageRandomPercentParams},
+    {_enterRainbowBridgeToHeaven, (void (*)(void *))enterRainbowBridgeToHeaven, &FunctionEnterRainbowBridgeToHeavenParams},
+    {_encounterHugeAmountOfEnemies, (void (*)(void *))encounterHugeAmountOfEnemies, &FunctionEncounterHugeAmountOfEnemiesParams},
+    {_crossSwitchMatrices, (void (*)(void *))crossSwitchMatrices, &FunctionCrossSwitchMatricesParams},
+    {_enterLightningStrikeArea, (void (*)(void *))enterLightningStrikeArea, &FunctionEnterLightningStrikeAreaParams},
+    {_enterForest, (void (*)(void *))enterForest, &FunctionEnterForestParams},
+    {_powerOfHeaven, (void (*)(void *))powerOfHeaven, &FunctionPowerOfHeavenParams},
+    {_applyTemperatureEffects, (void (*)(void *))applyTemperatureEffects, &FunctionApplyTemperatureEffectsParams},
+    {_playerEnterCampus, (void (*)(void *))playerEnterCampus, &FunctionPlayerEnterCampusParams},
+    {_playerRest, (void (*)(void *))playerRest, &FunctionPlayerRestParams},
+    {_playerOpenGift, (void (*)(void *))playerOpenGift, &FunctionPlayerOpenGiftParams},
+    {_playerEncounterEnemy, (void (*)(void *))playerEncounterEnemy, &FunctionPlayerEncounterEnemyParams},
+    {_playerEncounterBoss, (void (*)(void *))playerEncounterBoss, &FunctionPlayerEncounterBossParams},
+    {_playerEnterWildy, (void (*)(void *))playerEnterWildy, &FunctionPlayerEnterWildyParams},
+    {_playerPickupItem, (void (*)(void *))playerPickupItem, &FunctionPlayerPickupItemParams},
+    {_playerEncounterNpc, (void (*)(void *))playerEncounterNpc, &FunctionPlayerEncounterNpcParams}
 };
 
 void playGame(GameData *game) {
@@ -51,9 +51,9 @@ void playGame(GameData *game) {
             char *matrixValue = game->matrix[i][j];
 
             for (int k = 0; k < NUM_MAPPINGS; k++) {
-                if (strcmp(matrixValue, functionMappings[k].value) == 0) {
-                    functionMappings[k].function();
-                    break; 
+    if (strcmp(matrixValue, functionMappings[k].value) == 0) {
+        dynamicFunctionMappings[k].function(dynamicFunctionMappings[k].params);
+        break;
                 }
             }
         }
