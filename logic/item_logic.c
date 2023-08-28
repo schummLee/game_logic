@@ -1,6 +1,6 @@
-#include "item.h"
-#include "function.h"
-#include "player.h"
+#include "../components/item.h"
+#include "../components/function.h"
+#include "../components/player.h"
 #include <string.h>
 #include <stdlib.h>
 

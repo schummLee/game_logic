@@ -1,4 +1,5 @@
-#include "boss.h"
+#include "../components/boss.h"
+#include "../components/player.h"
 #include <string.h>
 
 Boss createBoss(const char *name, int health, int damage) {

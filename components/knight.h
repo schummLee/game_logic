@@ -4,6 +4,10 @@
 #include "armor.h" 
 #include "helmet.h"
 
+typedef struct Armor Armor;
+
+typedef struct Helmet Helmet;
+
 typedef struct {
     char name[50]; int health; Armor armor;  Helmet helmet; int buyCost;
 } Knight;

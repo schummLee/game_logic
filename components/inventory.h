@@ -5,6 +5,8 @@
 
 #define MAX_INVENTORY_SIZE 10
 
+typedef struct Item Item;
+
 typedef struct {
     Item items[MAX_INVENTORY_SIZE];
     int numItems;

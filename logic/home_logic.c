@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "../components/home.h"
+#include "../components/player.h"
 
 Home createHome() {
     Home newHome;

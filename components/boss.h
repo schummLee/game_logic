@@ -3,6 +3,8 @@
 
 #include "player.h" 
 
+typedef struct Player Player;
+
 typedef struct {
     char name[50];
     int health;

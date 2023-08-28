@@ -1,4 +1,5 @@
-#include "map.h"
+#include "../components/map.h"
+#include "../components/player.h"
 
 Map createMap(const char *type, int debuff, int buff) {
     Map map;

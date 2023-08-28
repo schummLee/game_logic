@@ -1,8 +1,11 @@
 #ifndef MAP_H
 #define MAP_H
 #define MAX_STRING_LENGTH 20
-#include "matrix_generator.h"
+#include "../static/matrix_generator.h"
 #include "player.h"
+
+typedef struct Player Player;
+
 
 typedef struct {
     char type[MAX_STRING_LENGTH];

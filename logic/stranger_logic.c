@@ -1,4 +1,4 @@
-
+#include "../components/player.h"
 #include <stdio.h>
 #include "../components/stranger.h"
 

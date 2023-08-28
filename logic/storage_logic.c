@@ -1,4 +1,5 @@
-#include "storage.h"
+#include "../components/storage.h"
+#include "../components/item.h"
 #include <stdio.h>
 #include <string.h>
 

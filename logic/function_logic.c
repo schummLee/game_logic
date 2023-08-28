@@ -1,5 +1,7 @@
-#include "function.h"
-#include "effects.h"
+#include "../components/function.h"
+#include "../components/effects.h"
+#include "../components/player.h"
+#include "../components/enemy.h"
 #include <string.h>
 #include <stdlib.h>
 

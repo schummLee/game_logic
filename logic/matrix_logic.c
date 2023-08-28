@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "matrix_generator.h" 
+#include "../staic/matrix_generator.h" 
 
 const char *categories[] = {
     "enemy", "map", "boss", "weapon", "logic", "player"

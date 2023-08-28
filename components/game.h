@@ -1,6 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
-#include "matrix_generator.h"  
+#include "../static/matrix_generator.h"  
 #include "player.h"  
 #include "enemy.h"  
 #include "boss.h"  

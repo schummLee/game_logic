@@ -1,4 +1,4 @@
-#include "daytime.h"
+#include "../components/daytime.h"
 
 Daytime get_daytime(int hour) {
     if (hour >= 6 && hour < 12) {

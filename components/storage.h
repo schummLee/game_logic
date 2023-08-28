@@ -5,6 +5,8 @@
 
 #define MAX_STORAGE_CAPACITY 50
 
+typedef struct Item Item;
+
 typedef struct {
     Item items[MAX_STORAGE_CAPACITY];
     int numItems;

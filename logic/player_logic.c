@@ -1,4 +1,4 @@
-#include "player.h"
+#include "../components/player.h"
 #include <string.h>
 
 Player createPlayer(const char *name) {

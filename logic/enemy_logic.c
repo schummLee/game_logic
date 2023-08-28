@@ -1,5 +1,5 @@
-#include "enemy.h"
-#include "player.h"
+#include "../components/enemy.h"
+#include "../components/player.h"
 #include <string.h>
 
 Enemy createEnemy(const char *name, int health, int damage) {

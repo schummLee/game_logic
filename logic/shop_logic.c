@@ -1,4 +1,7 @@
-#include "shop.h"
+#include "../components/shop.h"
+#include "../components/player.h"
+#include "../components/item.h"
+#include "../components/daytime.h"
 #include <stdio.h>
 #include <string.h>
 #include "daytime.h"

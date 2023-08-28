@@ -1,4 +1,4 @@
-#include "npc.h"
+#include "../components/npc.h"
 #include <string.h>
 
 Npc createNPC(const char *name, int health, int damage) {

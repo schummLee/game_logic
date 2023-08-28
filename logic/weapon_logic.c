@@ -1,4 +1,4 @@
-#include "weapon.h"
+#include "../components/weapon.h"
 #include <string.h>
 
 Weapon createWeapon(const char *name, int damage, int value) {

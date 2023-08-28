@@ -3,6 +3,12 @@
 
 #define MATRIX_SIZE 3
 #define MAX_STRING_LENGTH 20
+#include "../components/player.h"
+#include "../components/enemy.h"
+#include "../components/boss.h"
+#include "../components/weapon.h"
+#include "../components/map.h"
+#include "../components/game.h"
 
 typedef struct { char name[MAX_STRING_LENGTH]; int health; } Entity;
 

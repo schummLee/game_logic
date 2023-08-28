@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "../components/knight.h"
+#include "../components/armor.h"
+#include "../components/helmet.h"
 
 void initializeKnight(Knight *knight, const char *name, int health, const Armor *armor, const Helmet *helmet,int buyCost) {
     snprintf(knight->name, sizeof(knight->name), "%s", name);
