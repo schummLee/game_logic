@@ -6,14 +6,6 @@
 #include "item.h"
 #include "daytime.h"
 
-typedef struct Player Player;
-
-typedef struct Storage Storage;
-
-typedef struct Item Item;
-
-typedef struct Daytime Daytime;
-
 typedef struct {
    Storage storage;
    Item item; 

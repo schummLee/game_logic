@@ -7,18 +7,6 @@
 #include "npc.h"
 #include "inventory.h"
 
-typedef struct Weapon Weapon;
-
-typedef struct Enemy Enemy;
-
-typedef struct Boss Boss;
-
-typedef struct Shop Shop;
-
-typedef struct Npc Npc;
-
-typedef struct Inventory Inventory;
-
 typedef struct {
     char name[50]; int health; int maxHealth; int damage;
     int gold; int debuffImmunity; int encounterChance;

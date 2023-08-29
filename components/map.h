@@ -4,9 +4,6 @@
 #include "../static/matrix_generator.h"
 #include "player.h"
 
-typedef struct Player Player;
-
-
 typedef struct {
     char type[MAX_STRING_LENGTH];
     int buff;

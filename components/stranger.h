@@ -2,8 +2,6 @@
 #ifndef STRANGER_H
 #define STRANGER_H
 
-typedef struct Player Player;
-
 typedef struct Stranger {
     int health;
     int damage;

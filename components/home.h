@@ -4,10 +4,6 @@
 #include "player.h" 
 #include "storage.h"
 
-typedef struct Player Player;
-
-typedef struct Storage Storage;
-
 typedef struct {
    Storage storage;
 } Home;

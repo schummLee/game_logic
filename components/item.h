@@ -4,12 +4,6 @@
 #include "player.h"
 #include "enemy.h"
 
-typedef struct Function Function;
-
-typedef struct Player Player;
-
-typedef struct Enemy Enemy;
-
 typedef struct {
     char name[50]; int quntity; int value; Function function; int poisonResistance;
     int magicResistance;

@@ -65,206 +65,77 @@ typedef struct {
 } GameData;
 
 typedef struct {
-    const char *value;
-    void (*function)(void *);
-    void *params; 
-} DynamicFunctionMapping;
+    const char *value; void (*function)(void *); void *params; } DynamicFunctionMapping;
 
-typedef struct {
-    Player *player;
-} FunctionWithPlayerParamParams;
+typedef struct { Player *player; } FunctionWithPlayerParamParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    Item *item;
-    int numLoot;
-    DayTime timeOfDay;
-} FunctionEnterColdAreaParams;
+typedef struct { Player *player; Enemy *enemy; Item *item; int numLoot; DayTime timeOfDay; } FunctionEnterColdAreaParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Item *item;
-    int anotherIntParam;
-    DayTime timeOfDay;
-} FunctionEnterDesertParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam; Item *item; int anotherIntParam; DayTime timeOfDay; }
+FunctionEnterDesertParams;
 
-typedef struct {
-    Player *player;
-    Stranger *stranger;
-} FunctionCombatWithStrangerParams;
+typedef struct { Player *player; Stranger *stranger; } FunctionCombatWithStrangerParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Item *item;
-    int anotherIntParam;
-} FunctionLightningStrikeAndRainParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam; Item *item; int anotherIntParam; }
+FunctionLightningStrikeAndRainParams;
 
-typedef struct {
-    Player *player;
-    Boss *boss;
-    int someIntParam;
-    Item *item;
-    int anotherIntParam;
-} FunctionGetRandomItemParams;
+typedef struct { Player *player; Boss *boss; int someIntParam; Item *item; int anotherIntParam; }
+FunctionGetRandomItemParams;
 
-typedef struct {
-    Player *player;
-    Weapon *weapon;
-    int someIntParam;
-    Armor *armor;
-    int anotherIntParam;
-    Item *item;
-    int yetAnotherIntParam;
-} FunctionExploreUnknownAreaParams;
+typedef struct { Player *player; Weapon *weapon; int someIntParam; Armor *armor; int anotherIntParam; Item *item;
+    int yetAnotherIntParam; } FunctionExploreUnknownAreaParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    Item *item;
-    int numLoot;
-} FunctionNightTimeEncounterParams;
+typedef struct { Player *player; Enemy *enemy; Item *item; int numLoot; } FunctionNightTimeEncounterParams;
 
-typedef struct {
-    Player *player;
-    Knight *knight;
-} FunctionRecruitKnightParams;
+typedef struct { Player *player; Knight *knight; } FunctionRecruitKnightParams;
 
-typedef struct {
-    Player *player;
-    Boss *boss;
-    int someIntParam;
-} FunctionHallOfFameParams;
+typedef struct { Player *player; Boss *boss; int someIntParam; } FunctionHallOfFameParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    Armor *armor;
-    int armorIntParam;
-    Helmet *helmet;
-    int helmetIntParam;
-    Item *item;
-    int itemIntParam;
-} FunctionEncounterEnemyWithHeavyArmorParams;
+typedef struct { Player *player; Enemy *enemy; Armor *armor; int armorIntParam;
+    Helmet *helmet; int helmetIntParam; Item *item; int itemIntParam;} 
+FunctionEncounterEnemyWithHeavyArmorParams;
 
-typedef struct {
-    Player *player;
-    Boss *boss;
-    int someIntParam;
-} FunctionDefeatMultiElementBossParams;
+typedef struct { Player *player; Boss *boss; int someIntParam; } FunctionDefeatMultiElementBossParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Item *item;
-    int anotherIntParam;
-} FunctionSimulateRainfallParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam; Item *item; int anotherIntParam; }
+FunctionSimulateRainfallParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-} FunctionEnterProhibitedAreaParams;
+typedef struct { Player *player; Enemy *enemy; } FunctionEnterProhibitedAreaParams;
 
-typedef struct {
-    Player *player;
-    Item *item;
-    int someIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionEnterRainbowBridgeToHeavenParams;
+typedef struct { Player *player; Item *item; int someIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionEnterRainbowBridgeToHeavenParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Item *item;
-    int anotherIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionEncounterHugeAmountOfEnemiesParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam;
+    Item *item; int anotherIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionEncounterHugeAmountOfEnemiesParams;
 
-typedef struct {
-    int intParam1;
-    int intParam2;
-} FunctionCrossSwitchMatricesParams;
+typedef struct { int intParam1; int intParam2; } FunctionCrossSwitchMatricesParams;
 
-typedef struct {
-    Player *player;
-    Item *item;
-    int someIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionEnterLightningStrikeAreaParams;
+typedef struct { Player *player; Item *item; int someIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionEnterLightningStrikeAreaParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    Boss *boss;
-    int someIntParam;
-} FunctionApplyTemperatureEffectsParams;
+typedef struct { Player *player; Enemy *enemy; Boss *boss; int someIntParam; }
+FunctionApplyTemperatureEffectsParams;
 
-typedef struct {
-    Player *player;
-    Shop *shop;
-    Item *item;
-    int itemIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionPlayerEnterCampusParams;
+typedef struct { Player *player; Shop *shop; Item *item; int itemIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionPlayerEnterCampusParams;
 
-typedef struct {
-    Player *player;
-    Boss *boss;
-    int someIntParam;
-} FunctionPlayerOpenGiftParams;
+typedef struct { Player *player; Boss *boss; int someIntParam; } FunctionPlayerOpenGiftParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-} FunctionPlayerEncounterEnemyParams;
+typedef struct { Player *player; Enemy *enemy; } FunctionPlayerEncounterEnemyParams;
 
-typedef struct {
-    Player *player;
-    Boss *boss;
-} FunctionPlayerEncounterBossParams;
+typedef struct { Player *player; Boss *boss; } FunctionPlayerEncounterBossParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Npc *npc;
-    int npcIntParam;
-    Item *item;
-    Weapon *weapon;
-    Shop *shop;
-    int shopIntParam;
-    int anotherIntParam;
-} FunctionPlayerEncounterNpcParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam; Npc *npc;
+    int npcIntParam; Item *item; Weapon *weapon; Shop *shop; int shopIntParam; int anotherIntParam; }
+FunctionPlayerEncounterNpcParams;
 
-typedef struct {
-    Player *player;
-    Enemy *enemy;
-    int someIntParam;
-    Npc *npc;
-    int npcIntParam;
-    Item *item;
-    int itemIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionPlayerEnterWildyParams;
+typedef struct { Player *player; Enemy *enemy; int someIntParam; Npc *npc;
+    int npcIntParam; Item *item; int itemIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionPlayerEnterWildyParams;
 
-typedef struct {
-    Player *player;
-    Item *item;
-    int itemIntParam;
-    Weapon *weapon;
-    int weaponIntParam;
-} FunctionPlayerPickupItemParams;
+typedef struct { Player *player; Item *item; int itemIntParam; Weapon *weapon; int weaponIntParam; }
+FunctionPlayerPickupItemParams;
 
 extern void playerEncounterEnemy(Player *player, Enemy *enemy); 
 
@@ -272,31 +143,19 @@ extern void playerEncounterBoss(Player *player, Boss *boss);
 
 extern void playerPickUpWeapon(Player *player, Weapon *weapon); 
 
-extern void playerEncounterNpc(
-    Player *player, Npc *npc, 
-    Boss *boss, Item *items, 
-    Weapon *weapons, 
-    Shop *shop,
-    int numItems, 
-    int numWeapons
+extern void playerEncounterNpc( Player *player, Npc *npc,  Boss *boss, Item *items, 
+    Weapon *weapons,  Shop *shop, int numItems,  int numWeapons
 );
 
 extern void playerEnterHome(Player *player, Home *home, int itemIndex);
 
 extern void playerEnterShop(Player *player, Shop *shop);
 
-extern void playerEnterWildy(
-    Player *player,  Enemy *enemies, 
-    int numEnemies,  Npc *npcs, 
-    int numNpcs,  Item *items, 
-    int numItems,  Weapon *weapons, 
-    int numWeapons
+extern void playerEnterWildy( Player *player,  Enemy *enemies,  int numEnemies,  Npc *npcs, 
+    int numNpcs,  Item *items,  int numItems,  Weapon *weapons,  int numWeapons
 );
 
-extern void playerPickupItem(
-    Player *player, Item *items, 
-    int numItems, Weapon *weapons, 
-    int numWeapons);
+extern void playerPickupItem( Player *player, Item *items,  int numItems, Weapon *weapons,  int numWeapons);
 
 extern void playGame(GameData *game);
 

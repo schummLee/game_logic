@@ -1,6 +1,6 @@
 #include <stdbool.h>
-#include "../logic/game_logic.c"
-#include "../socket/socketServer.c"
+//#include "../logic/game_logic.c"
+//#include "../socket/socketServer.c"
 #include "../components/string_function.h"
 #include "../components/game.h"
 
@@ -70,6 +70,6 @@ void game_engine() {
   
 
     if (isGameRunning){
-        startSocketServer();
+       // startSocketServer();
     }
 }

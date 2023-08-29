@@ -1,0 +1,388 @@
+In file included from game.c:4:
+../components/string_function.h:6:13: warning: ‘_coldArea’ initialized and declared ‘extern’
+    6 | extern char _coldArea[100] = "coldArea";
+      |             ^~~~~~~~~
+../components/string_function.h:7:13: warning: ‘_desert’ initialized and declared ‘extern’
+    7 | extern char _desert[100] = "desert";
+      |             ^~~~~~~
+../components/string_function.h:8:13: warning: ‘_combatWithStranger’ initialized and declared ‘extern’
+    8 | extern char _combatWithStranger[100] = "combatWithStranger";
+      |             ^~~~~~~~~~~~~~~~~~~
+../components/string_function.h:9:13: warning: ‘_acquireImmunityAndDefuff’ initialized and declared ‘extern’
+    9 | extern char _acquireImmunityAndDefuff[100] = "acquireImmunityAndDebuff";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:10:13: warning: ‘_lightningStrikeAndRain’ initialized and declared ‘extern’
+   10 | extern char _lightningStrikeAndRain[100] = "lightningStrikeAndRain";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:11:13: warning: ‘_getRandomInfo’ initialized and declared ‘extern’
+   11 | extern char _getRandomInfo[100] = "getRandomInfo";
+      |             ^~~~~~~~~~~~~~
+../components/string_function.h:12:13: warning: ‘_exploreUnknownArea’ initialized and declared ‘extern’
+   12 | extern char _exploreUnknownArea[100] = "exploreUnknownArea";
+      |             ^~~~~~~~~~~~~~~~~~~
+../components/string_function.h:13:13: warning: ‘_nightTimeEncounter’ initialized and declared ‘extern’
+   13 | extern char _nightTimeEncounter[100] = "nightTimeEncounter";
+      |             ^~~~~~~~~~~~~~~~~~~
+../components/string_function.h:14:13: warning: ‘_recruitKnight’ initialized and declared ‘extern’
+   14 | extern char _recruitKnight[100] = "recruitKnight";
+      |             ^~~~~~~~~~~~~~
+../components/string_function.h:15:13: warning: ‘_hallOfFame’ initialized and declared ‘extern’
+   15 | extern char _hallOfFame[100] = "hallOfFame";
+      |             ^~~~~~~~~~~
+../components/string_function.h:16:13: warning: ‘_encounterEnemyWithHeavyArmor’ initialized and declared ‘extern’
+   16 | extern char _encounterEnemyWithHeavyArmor[100] = "encounterEnemyWithHeavyArmor";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:17:13: warning: ‘_defeatMultiElementBoss’ initialized and declared ‘extern’
+   17 | extern char _defeatMultiElementBoss[100] = "defeatMultiElementBoss";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:18:13: warning: ‘_simulateRainfall’ initialized and declared ‘extern’
+   18 | extern char _simulateRainfall[100] = "simulateRainfall";
+      |             ^~~~~~~~~~~~~~~~~
+../components/string_function.h:19:13: warning: ‘_enterProhibitedArea’ initialized and declared ‘extern’
+   19 | extern char _enterProhibitedArea[100] = "enterProhibitedArea";
+      |             ^~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:20:13: warning: ‘_increaseDamageRandomPercent’ initialized and declared ‘extern’
+   20 | extern char _increaseDamageRandomPercent[100] = "increaseDamageRandomPercent";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:21:13: warning: ‘_enterRainbowBridgeToHeaven’ initialized and declared ‘extern’
+   21 | extern char _enterRainbowBridgeToHeaven[100] = "enterRainbowBridgeToHeaven";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:22:13: warning: ‘_encounterHugeAmountOfEnemies’ initialized and declared ‘extern’
+   22 | extern char _encounterHugeAmountOfEnemies[100] = "encounterHugeAmountOfEnemies";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:23:13: warning: ‘_crossSwitchMatrices’ initialized and declared ‘extern’
+   23 | extern char _crossSwitchMatrices[100] = "crossSwitchMatrices";
+      |             ^~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:24:13: warning: ‘_enterLightningStrikeArea’ initialized and declared ‘extern’
+   24 | extern char _enterLightningStrikeArea[100] = "enterLightningStrikeArea";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:25:13: warning: ‘_enterForest’ initialized and declared ‘extern’
+   25 | extern char _enterForest[100] = "enterForest";
+      |             ^~~~~~~~~~~~
+../components/string_function.h:26:13: warning: ‘_powerOfHeaven’ initialized and declared ‘extern’
+   26 | extern char _powerOfHeaven[100] = "powerOfHeaven";
+      |             ^~~~~~~~~~~~~~
+../components/string_function.h:27:13: warning: ‘_applyTemperatureEffects’ initialized and declared ‘extern’
+   27 | extern char _applyTemperatureEffects[100] = "applyTemperatureEffects";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:28:13: warning: ‘_playerEnterCampus’ initialized and declared ‘extern’
+   28 | extern char _playerEnterCampus[100] = "playerEnterCampus";
+      |             ^~~~~~~~~~~~~~~~~~
+../components/string_function.h:29:13: warning: ‘_playerRest’ initialized and declared ‘extern’
+   29 | extern char _playerRest[100] = "playerRest";
+      |             ^~~~~~~~~~~
+../components/string_function.h:30:13: warning: ‘_playerOpenGift’ initialized and declared ‘extern’
+   30 | extern char _playerOpenGift[100] = "playerOpenGift";
+      |             ^~~~~~~~~~~~~~~
+../components/string_function.h:31:13: warning: ‘_playerEncounterEnemy’ initialized and declared ‘extern’
+   31 | extern char _playerEncounterEnemy[100] = "playerEncounterEnemy";
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:32:13: warning: ‘_playerEncounterBoss’ initialized and declared ‘extern’
+   32 | extern char _playerEncounterBoss[100] = "playerEncounterBoss";
+      |             ^~~~~~~~~~~~~~~~~~~~
+../components/string_function.h:33:13: warning: ‘_playerEnterWildy’ initialized and declared ‘extern’
+   33 | extern char _playerEnterWildy[100] = "playerEnterWildy";
+      |             ^~~~~~~~~~~~~~~~~
+../components/string_function.h:34:13: warning: ‘_playerPickupItem’ initialized and declared ‘extern’
+   34 | extern char _playerPickupItem[100] = "playerPickupItem";
+      |             ^~~~~~~~~~~~~~~~~
+../components/string_function.h:35:13: warning: ‘_playerEncounterNpc’ initialized and declared ‘extern’
+   35 | extern char _playerEncounterNpc[100] = "playerEncounterNpc";
+      |             ^~~~~~~~~~~~~~~~~~~
+In file included from ../components/../static/matrix_generator.h:6,
+                 from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/../components/player.h:15:3: error: conflicting types for ‘Player’; have ‘struct <anonymous>’
+   15 | } Player;
+      |   ^~~~~~
+In file included from ../components/../static/../components/player.h:4,
+                 from ../components/../static/matrix_generator.h:6,
+                 from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/../components/enemy.h:5:23: note: previous declaration of ‘Player’ with type ‘Player’
+    5 | typedef struct Player Player;
+      |                       ^~~~~~
+In file included from game.c:5:
+../components/game.h:24: warning: "MAX_STRING_LENGTH" redefined
+   24 | #define MAX_STRING_LENGTH 100
+      | 
+In file included from ../components/../static/matrix_generator.h:10,
+                 from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/../components/map.h:3: note: this is the location of the previous definition
+    3 | #define MAX_STRING_LENGTH 20
+      | 
+In file included from game.c:5:
+../components/game.h:56:3: error: conflicting types for ‘Entity’; have ‘struct <anonymous>’
+   56 | } Entity;
+      |   ^~~~~~
+In file included from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/matrix_generator.h:13:62: note: previous declaration of ‘Entity’ with type ‘Entity’
+   13 | typedef struct { char name[MAX_STRING_LENGTH]; int health; } Entity;
+      |                                                              ^~~~~~
+In file included from game.c:5:
+../components/game.h:60:38: error: duplicate member ‘item’
+   60 |     Function function; Npc npc; Item item; Home home; Shop shop; Storage storage;
+      |                                      ^~~~
+../components/game.h:65:3: error: conflicting types for ‘GameData’; have ‘struct <anonymous>’
+   65 | } GameData;
+      |   ^~~~~~~~
+In file included from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/matrix_generator.h:18:3: note: previous declaration of ‘GameData’ with type ‘GameData’
+   18 | } GameData;
+      |   ^~~~~~~~
+In file included from game.c:5:
+../components/game.h:160:13: error: conflicting types for ‘playGame’; have ‘void(GameData *)’
+  160 | extern void playGame(GameData *game);
+      |             ^~~~~~~~
+In file included from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/matrix_generator.h:24:6: note: previous declaration of ‘playGame’ with type ‘void(GameData *)’
+   24 | void playGame(GameData *game);
+      |      ^~~~~~~~
+game.c:8:35: error: ‘enterColdArea’ undeclared here (not in a function)
+    8 |     {_coldArea, (void (*)(void *))enterColdArea, &FunctionColdAreaParams},
+      |                                   ^~~~~~~~~~~~~
+game.c:8:51: error: ‘FunctionColdAreaParams’ undeclared here (not in a function); did you mean ‘FunctionEnterColdAreaParams’?
+    8 |     {_coldArea, (void (*)(void *))enterColdArea, &FunctionColdAreaParams},
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                   FunctionEnterColdAreaParams
+game.c:9:33: error: ‘enterDesert’ undeclared here (not in a function)
+    9 |     {_desert, (void (*)(void *))enterDesert, &FunctionDesertParams},
+      |                                 ^~~~~~~~~~~
+game.c:9:47: error: ‘FunctionDesertParams’ undeclared here (not in a function); did you mean ‘FunctionEnterDesertParams’?
+    9 |     {_desert, (void (*)(void *))enterDesert, &FunctionDesertParams},
+      |                                               ^~~~~~~~~~~~~~~~~~~~
+      |                                               FunctionEnterDesertParams
+game.c:10:66: error: expected expression before ‘FunctionCombatWithStrangerParams’
+   10 |     {_combatWithStranger, (void (*)(void *))combatWithStranger, &FunctionCombatWithStrangerParams},
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:11:51: error: ‘acquireImmunityAndDebuff’ undeclared here (not in a function); did you mean ‘_acquireImmunityAndDefuff’?
+   11 |     {_acquireImmunityAndDefuff, (void (*)(void *))acquireImmunityAndDebuff, &FunctionAcquireImmunityAndDefuffParams},
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                   _acquireImmunityAndDefuff
+game.c:11:78: error: ‘FunctionAcquireImmunityAndDefuffParams’ undeclared here (not in a function)
+   11 |     {_acquireImmunityAndDefuff, (void (*)(void *))acquireImmunityAndDebuff, &FunctionAcquireImmunityAndDefuffParams},
+      |                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:12:49: error: ‘lightningStrikeAndRain’ undeclared here (not in a function); did you mean ‘_lightningStrikeAndRain’?
+   12 |     {_lightningStrikeAndRain, (void (*)(void *))lightningStrikeAndRain, &FunctionLightningStrikeAndRainParams},
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                 _lightningStrikeAndRain
+game.c:12:74: error: expected expression before ‘FunctionLightningStrikeAndRainParams’
+   12 |     {_lightningStrikeAndRain, (void (*)(void *))lightningStrikeAndRain, &FunctionLightningStrikeAndRainParams},
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:13:40: error: ‘getRandomInfo’ undeclared here (not in a function); did you mean ‘_getRandomInfo’?
+   13 |     {_getRandomInfo, (void (*)(void *))getRandomInfo, &FunctionGetRandomInfoParams},
+      |                                        ^~~~~~~~~~~~~
+      |                                        _getRandomInfo
+game.c:13:56: error: ‘FunctionGetRandomInfoParams’ undeclared here (not in a function); did you mean ‘FunctionGetRandomItemParams’?
+   13 |     {_getRandomInfo, (void (*)(void *))getRandomInfo, &FunctionGetRandomInfoParams},
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                        FunctionGetRandomItemParams
+game.c:14:45: error: ‘exploreUnknownArea’ undeclared here (not in a function); did you mean ‘_exploreUnknownArea’?
+   14 |     {_exploreUnknownArea, (void (*)(void *))exploreUnknownArea, &FunctionExploreUnknownAreaParams},
+      |                                             ^~~~~~~~~~~~~~~~~~
+      |                                             _exploreUnknownArea
+game.c:14:66: error: expected expression before ‘FunctionExploreUnknownAreaParams’
+   14 |     {_exploreUnknownArea, (void (*)(void *))exploreUnknownArea, &FunctionExploreUnknownAreaParams},
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:15:45: error: ‘nightTimeEncounter’ undeclared here (not in a function); did you mean ‘_nightTimeEncounter’?
+   15 |     {_nightTimeEncounter, (void (*)(void *))nightTimeEncounter, &FunctionNightTimeEncounterParams},
+      |                                             ^~~~~~~~~~~~~~~~~~
+      |                                             _nightTimeEncounter
+game.c:15:66: error: expected expression before ‘FunctionNightTimeEncounterParams’
+   15 |     {_nightTimeEncounter, (void (*)(void *))nightTimeEncounter, &FunctionNightTimeEncounterParams},
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:16:40: error: ‘recruitKnight’ undeclared here (not in a function); did you mean ‘_recruitKnight’?
+   16 |     {_recruitKnight, (void (*)(void *))recruitKnight, &FunctionRecruitKnightParams},
+      |                                        ^~~~~~~~~~~~~
+      |                                        _recruitKnight
+game.c:16:56: error: expected expression before ‘FunctionRecruitKnightParams’
+   16 |     {_recruitKnight, (void (*)(void *))recruitKnight, &FunctionRecruitKnightParams},
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:17:37: error: ‘hallOfFame’ undeclared here (not in a function); did you mean ‘_hallOfFame’?
+   17 |     {_hallOfFame, (void (*)(void *))hallOfFame, &FunctionHallOfFameParams},
+      |                                     ^~~~~~~~~~
+      |                                     _hallOfFame
+game.c:17:50: error: expected expression before ‘FunctionHallOfFameParams’
+   17 |     {_hallOfFame, (void (*)(void *))hallOfFame, &FunctionHallOfFameParams},
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+game.c:18:55: error: ‘encounterEnemyWithHeavyArmor’ undeclared here (not in a function); did you mean ‘_encounterEnemyWithHeavyArmor’?
+   18 |     {_encounterEnemyWithHeavyArmor, (void (*)(void *))encounterEnemyWithHeavyArmor, &FunctionEncounterEnemyWithHeavyArmorParams},
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                       _encounterEnemyWithHeavyArmor
+game.c:18:86: error: expected expression before ‘FunctionEncounterEnemyWithHeavyArmorParams’
+   18 |     {_encounterEnemyWithHeavyArmor, (void (*)(void *))encounterEnemyWithHeavyArmor, &FunctionEncounterEnemyWithHeavyArmorParams},
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:19:49: error: ‘defeatMultiElementBoss’ undeclared here (not in a function); did you mean ‘_defeatMultiElementBoss’?
+   19 |     {_defeatMultiElementBoss, (void (*)(void *))defeatMultiElementBoss, &FunctionDefeatMultiElementBossParams},
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                 _defeatMultiElementBoss
+game.c:19:74: error: expected expression before ‘FunctionDefeatMultiElementBossParams’
+   19 |     {_defeatMultiElementBoss, (void (*)(void *))defeatMultiElementBoss, &FunctionDefeatMultiElementBossParams},
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:20:43: error: ‘simulateRainfall’ undeclared here (not in a function); did you mean ‘_simulateRainfall’?
+   20 |     {_simulateRainfall, (void (*)(void *))simulateRainfall, &FunctionSimulateRainfallParams},
+      |                                           ^~~~~~~~~~~~~~~~
+      |                                           _simulateRainfall
+game.c:20:62: error: expected expression before ‘FunctionSimulateRainfallParams’
+   20 |     {_simulateRainfall, (void (*)(void *))simulateRainfall, &FunctionSimulateRainfallParams},
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:21:46: error: ‘enterProhibitedArea’ undeclared here (not in a function); did you mean ‘_enterProhibitedArea’?
+   21 |     {_enterProhibitedArea, (void (*)(void *))enterProhibitedArea, &FunctionEnterProhibitedAreaParams},
+      |                                              ^~~~~~~~~~~~~~~~~~~
+      |                                              _enterProhibitedArea
+game.c:21:68: error: expected expression before ‘FunctionEnterProhibitedAreaParams’
+   21 |     {_enterProhibitedArea, (void (*)(void *))enterProhibitedArea, &FunctionEnterProhibitedAreaParams},
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:22:54: error: ‘increaseDamageRandomPercent’ undeclared here (not in a function); did you mean ‘_increaseDamageRandomPercent’?
+   22 |     {_increaseDamageRandomPercent, (void (*)(void *))increaseDamageRandomPercent, &FunctionIncreaseDamageRandomPercentParams},
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                      _increaseDamageRandomPercent
+game.c:22:84: error: ‘FunctionIncreaseDamageRandomPercentParams’ undeclared here (not in a function); did you mean ‘_increaseDamageRandomPercent’?
+   22 |     {_increaseDamageRandomPercent, (void (*)(void *))increaseDamageRandomPercent, &FunctionIncreaseDamageRandomPercentParams},
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                    _increaseDamageRandomPercent
+game.c:23:53: error: ‘enterRainbowBridgeToHeaven’ undeclared here (not in a function); did you mean ‘_enterRainbowBridgeToHeaven’?
+   23 |     {_enterRainbowBridgeToHeaven, (void (*)(void *))enterRainbowBridgeToHeaven, &FunctionEnterRainbowBridgeToHeavenParams},
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     _enterRainbowBridgeToHeaven
+game.c:23:82: error: expected expression before ‘FunctionEnterRainbowBridgeToHeavenParams’
+   23 |     {_enterRainbowBridgeToHeaven, (void (*)(void *))enterRainbowBridgeToHeaven, &FunctionEnterRainbowBridgeToHeavenParams},
+      |                                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:24:55: error: ‘encounterHugeAmountOfEnemies’ undeclared here (not in a function); did you mean ‘_encounterHugeAmountOfEnemies’?
+   24 |     {_encounterHugeAmountOfEnemies, (void (*)(void *))encounterHugeAmountOfEnemies, &FunctionEncounterHugeAmountOfEnemiesParams},
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                       _encounterHugeAmountOfEnemies
+game.c:24:86: error: expected expression before ‘FunctionEncounterHugeAmountOfEnemiesParams’
+   24 |     {_encounterHugeAmountOfEnemies, (void (*)(void *))encounterHugeAmountOfEnemies, &FunctionEncounterHugeAmountOfEnemiesParams},
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:25:46: error: ‘crossSwitchMatrices’ undeclared here (not in a function); did you mean ‘_crossSwitchMatrices’?
+   25 |     {_crossSwitchMatrices, (void (*)(void *))crossSwitchMatrices, &FunctionCrossSwitchMatricesParams},
+      |                                              ^~~~~~~~~~~~~~~~~~~
+      |                                              _crossSwitchMatrices
+game.c:25:68: error: expected expression before ‘FunctionCrossSwitchMatricesParams’
+   25 |     {_crossSwitchMatrices, (void (*)(void *))crossSwitchMatrices, &FunctionCrossSwitchMatricesParams},
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:26:51: error: ‘enterLightningStrikeArea’ undeclared here (not in a function); did you mean ‘_enterLightningStrikeArea’?
+   26 |     {_enterLightningStrikeArea, (void (*)(void *))enterLightningStrikeArea, &FunctionEnterLightningStrikeAreaParams},
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                   _enterLightningStrikeArea
+game.c:26:78: error: expected expression before ‘FunctionEnterLightningStrikeAreaParams’
+   26 |     {_enterLightningStrikeArea, (void (*)(void *))enterLightningStrikeArea, &FunctionEnterLightningStrikeAreaParams},
+      |                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:27:38: error: ‘enterForest’ undeclared here (not in a function); did you mean ‘_enterForest’?
+   27 |     {_enterForest, (void (*)(void *))enterForest, &FunctionEnterForestParams},
+      |                                      ^~~~~~~~~~~
+      |                                      _enterForest
+game.c:27:52: error: ‘FunctionEnterForestParams’ undeclared here (not in a function); did you mean ‘FunctionEnterDesertParams’?
+   27 |     {_enterForest, (void (*)(void *))enterForest, &FunctionEnterForestParams},
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                    FunctionEnterDesertParams
+game.c:28:40: error: ‘powerOfHeaven’ undeclared here (not in a function); did you mean ‘_powerOfHeaven’?
+   28 |     {_powerOfHeaven, (void (*)(void *))powerOfHeaven, &FunctionPowerOfHeavenParams},
+      |                                        ^~~~~~~~~~~~~
+      |                                        _powerOfHeaven
+game.c:28:56: error: ‘FunctionPowerOfHeavenParams’ undeclared here (not in a function); did you mean ‘FunctionHallOfFameParams’?
+   28 |     {_powerOfHeaven, (void (*)(void *))powerOfHeaven, &FunctionPowerOfHeavenParams},
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                        FunctionHallOfFameParams
+game.c:29:50: error: ‘applyTemperatureEffects’ undeclared here (not in a function); did you mean ‘_applyTemperatureEffects’?
+   29 |     {_applyTemperatureEffects, (void (*)(void *))applyTemperatureEffects, &FunctionApplyTemperatureEffectsParams},
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                  _applyTemperatureEffects
+game.c:29:76: error: expected expression before ‘FunctionApplyTemperatureEffectsParams’
+   29 |     {_applyTemperatureEffects, (void (*)(void *))applyTemperatureEffects, &FunctionApplyTemperatureEffectsParams},
+      |                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:30:44: error: ‘playerEnterCampus’ undeclared here (not in a function); did you mean ‘_playerEnterCampus’?
+   30 |     {_playerEnterCampus, (void (*)(void *))playerEnterCampus, &FunctionPlayerEnterCampusParams},
+      |                                            ^~~~~~~~~~~~~~~~~
+      |                                            _playerEnterCampus
+game.c:30:64: error: expected expression before ‘FunctionPlayerEnterCampusParams’
+   30 |     {_playerEnterCampus, (void (*)(void *))playerEnterCampus, &FunctionPlayerEnterCampusParams},
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:31:37: error: ‘playerRest’ undeclared here (not in a function); did you mean ‘_playerRest’?
+   31 |     {_playerRest, (void (*)(void *))playerRest, &FunctionPlayerRestParams},
+      |                                     ^~~~~~~~~~
+      |                                     _playerRest
+game.c:31:50: error: ‘FunctionPlayerRestParams’ undeclared here (not in a function); did you mean ‘FunctionPlayerOpenGiftParams’?
+   31 |     {_playerRest, (void (*)(void *))playerRest, &FunctionPlayerRestParams},
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                  FunctionPlayerOpenGiftParams
+game.c:32:41: error: ‘playerOpenGift’ undeclared here (not in a function); did you mean ‘_playerOpenGift’?
+   32 |     {_playerOpenGift, (void (*)(void *))playerOpenGift, &FunctionPlayerOpenGiftParams},
+      |                                         ^~~~~~~~~~~~~~
+      |                                         _playerOpenGift
+game.c:32:58: error: expected expression before ‘FunctionPlayerOpenGiftParams’
+   32 |     {_playerOpenGift, (void (*)(void *))playerOpenGift, &FunctionPlayerOpenGiftParams},
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:33:70: error: expected expression before ‘FunctionPlayerEncounterEnemyParams’
+   33 |     {_playerEncounterEnemy, (void (*)(void *))playerEncounterEnemy, &FunctionPlayerEncounterEnemyParams},
+      |                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:34:68: error: expected expression before ‘FunctionPlayerEncounterBossParams’
+   34 |     {_playerEncounterBoss, (void (*)(void *))playerEncounterBoss, &FunctionPlayerEncounterBossParams},
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:35:62: error: expected expression before ‘FunctionPlayerEnterWildyParams’
+   35 |     {_playerEnterWildy, (void (*)(void *))playerEnterWildy, &FunctionPlayerEnterWildyParams},
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:36:62: error: expected expression before ‘FunctionPlayerPickupItemParams’
+   36 |     {_playerPickupItem, (void (*)(void *))playerPickupItem, &FunctionPlayerPickupItemParams},
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:37:66: error: expected expression before ‘FunctionPlayerEncounterNpcParams’
+   37 |     {_playerEncounterNpc, (void (*)(void *))playerEncounterNpc, &FunctionPlayerEncounterNpcParams}
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+game.c:40:6: error: conflicting types for ‘playGame’; have ‘void(GameData *)’
+   40 | void playGame(GameData *game) {
+      |      ^~~~~~~~
+In file included from ../components/game.h:3,
+                 from game.c:5:
+../components/../static/matrix_generator.h:24:6: note: previous declaration of ‘playGame’ with type ‘void(GameData *)’
+   24 | void playGame(GameData *game);
+      |      ^~~~~~~~
+game.c: In function ‘playGame’:
+game.c:41:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   41 |     printf("Starting the game!\n");
+      |     ^~~~~~
+game.c:6:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    5 | #include "../components/game.h"
+  +++ |+#include <stdio.h>
+    6 | 
+game.c:41:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   41 |     printf("Starting the game!\n");
+      |     ^~~~~~
+game.c:41:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+game.c:43:5: warning: implicit declaration of function ‘applyTemperatureEffects’ [-Wimplicit-function-declaration]
+   43 |     applyTemperatureEffects(game->player,game->enemy, game->boss,game->temperature);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from game.c:4:
+../components/string_function.h:3:30: error: ‘functionMappings’ undeclared (first use in this function); did you mean ‘dynamicfunctionMappings’?
+    3 | #define NUM_MAPPINGS (sizeof(functionMappings) / sizeof(MatrixFunctionMapping))
+      |                              ^~~~~~~~~~~~~~~~
+game.c:53:33: note: in expansion of macro ‘NUM_MAPPINGS’
+   53 |             for (int k = 0; k < NUM_MAPPINGS; k++) {
+      |                                 ^~~~~~~~~~~~
+../components/string_function.h:3:30: note: each undeclared identifier is reported only once for each function it appears in
+    3 | #define NUM_MAPPINGS (sizeof(functionMappings) / sizeof(MatrixFunctionMapping))
+      |                              ^~~~~~~~~~~~~~~~
+game.c:53:33: note: in expansion of macro ‘NUM_MAPPINGS’
+   53 |             for (int k = 0; k < NUM_MAPPINGS; k++) {
+      |                                 ^~~~~~~~~~~~
+../components/string_function.h:3:57: error: ‘MatrixFunctionMapping’ undeclared (first use in this function); did you mean ‘DynamicFunctionMapping’?
+    3 | #define NUM_MAPPINGS (sizeof(functionMappings) / sizeof(MatrixFunctionMapping))
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~
+game.c:53:33: note: in expansion of macro ‘NUM_MAPPINGS’
+   53 |             for (int k = 0; k < NUM_MAPPINGS; k++) {
+      |                                 ^~~~~~~~~~~~
+game.c:54:9: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+   54 |     if (strcmp(matrixValue, functionMappings[k].value) == 0) {
+      |         ^~~~~~
+game.c:6:1: note: include ‘<string.h>’ or provide a declaration of ‘strcmp’
+    5 | #include "../components/game.h"
+  +++ |+#include <string.h>
+    6 | 
+game.c:55:9: error: ‘dynamicFunctionMappings’ undeclared (first use in this function); did you mean ‘dynamicfunctionMappings’?
+   55 |         dynamicFunctionMappings[k].function(dynamicFunctionMappings[k].params);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+      |         dynamicfunctionMappings
