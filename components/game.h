@@ -157,6 +157,70 @@ extern void playerEnterWildy( Player *player,  Enemy *enemies,  int numEnemies, 
 
 extern void playerPickupItem( Player *player, Item *items,  int numItems, Weapon *weapons,  int numWeapons);
 
+extern void enterDesert(Player *player, Enemy *enemies, int numEnemies, Item *item, int numLoot, DayTime timeOfDay);
+
+extern void combatWithStranger(Player *player, Stranger *stranger);
+
+extern void acquireImmunityAndDebuff(Player *player);
+
+extern void lightningStrikeAndRain(Player *player, Enemy *enemies, int numEnemies, Item *loot, int numLoot);
+
+extern void getRandomInfo(Player *player, Boss *bosses, int numBosses, Item *item, int numLoot);
+
+extern void exploreUnknownArea(Player *player, Weapon *weapons, int numWeapons, Armor *armors, int numArmors, Item *items, int numItems);
+
+extern void nightTimeEncounter(Player *player, Enemy *enemy, Item *magicItems, int numMagicItems);
+
+extern void recruitKnight(Player *player, Knight *knight);
+
+extern void hallOfFame(Player *player, Boss *bosses, int numBosses);
+
+extern void encounterEnemyWithHeavyArmor(Player *player, Enemy *enemy, Armor *armors, int numArmors, Helmet *helmets,     int numHelmets, Item *defenseItems, int numDefenseItems);
+
+extern void defeatMultiElementBoss(Player *player, Boss *boss);
+
+extern void simulateRainfall(Player *player, Enemy *enemies, int numEnemies, Item *waterItems, int numWaterItems);
+
+extern void enterProhibitedArea(Player *player, Enemy *enemy);
+
+extern void increaseDamageRandomPercent(Player *player);
+
+extern void enterRainbowBridgeToHeaven(Player *player, Item *heavenItems, int numHeavenItems, Weapon *heavenWeapons,     int numHeavenWeapons);
+
+extern void encounterHugeAmountOfEnemies(Player *player, Enemy *enemies, int numEnemies, Item *items, int numItems, W    eapon *weapons, int numWeapons);
+
+extern void crossSwitchMatrices(int matrix1[3], int matrix2[5]);
+
+extern void enterLightningStrikeArea(Player *player, Item *lightningItems, int numLightningItems, Weapon *lightningWe    apons, int numLightningWeapons);
+
+extern void enterForest(Player *player);
+
+extern void powerOfHeaven(Player *player);
+
+extern void applyTemperatureEffects(Player *player, Enemy *enemies, Boss *boss, int temperature);
+
+extern void playerEnterCampus(Player *player, Shop *shop, Item *enchantedItems, int numEnchantedItems, Weapon *enchan    tedWeapons, int numEnchantedWeapons);
+
+extern void playerRest(Player *player);
+
+extern void playerOpenGift(Player *player, Boss *boss, int explorationCompleted);
+
+extern void playerEncounterEnemy(Player *player, Enemy *enemy);
+
+extern void playerEncounterBoss(Player *player, Boss *boss);
+
+extern void playerPickUpWeapon(Player *player, Weapon *weapon);
+
+extern void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, Shop *shop, int nu    mItems, int numWeapons);
+
+extern void playerEnterShop(Player *player, Shop *shop);
+
+extern void playerEnterHome(Player *player, Home *home,int itemIndex);
+
+extern void playerEnterWildy(Player *player, Enemy *enemies, int numEnemies, Npc *npcs, int numNpcs, Item *items, int     numItems, Weapon *weapons, int numWeapons);
+
+extern void playerPickupItem(Player *player, Item *items, int numItems, Weapon *weapons, int numWeapons);
+
 extern void playGame(GameData *game);
 
 #endif 
