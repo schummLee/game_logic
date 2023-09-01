@@ -4,7 +4,7 @@
 #include "../components/string_function.h"
 #include "../components/game.h"
 
-DynamicFunctionMapping dynamicfunctionMappings[] = {
+DynamicFunctionMapping dynamicFunctionMappings[] = {
     {_coldArea, (void (*)(void *))enterColdArea, &FunctionColdAreaParams},
     {_desert, (void (*)(void *))enterDesert, &FunctionDesertParams},
     {_combatWithStranger, (void (*)(void *))combatWithStranger, &FunctionCombatWithStrangerParams},

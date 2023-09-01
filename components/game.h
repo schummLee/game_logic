@@ -175,7 +175,7 @@ extern void recruitKnight(Player *player, Knight *knight);
 
 extern void hallOfFame(Player *player, Boss *bosses, int numBosses);
 
-extern void encounterEnemyWithHeavyArmor(Player *player, Enemy *enemy, Armor *armors, int numArmors, Helmet *helmets,     int numHelmets, Item *defenseItems, int numDefenseItems);
+extern void encounterEnemyWithHeavyArmor(Player *player, Enemy *enemy, Armor *armors, int numArmors, Helmet *helmets, int numHelmets, Item *defenseItems, int numDefenseItems);
 
 extern void defeatMultiElementBoss(Player *player, Boss *boss);
 
@@ -185,13 +185,13 @@ extern void enterProhibitedArea(Player *player, Enemy *enemy);
 
 extern void increaseDamageRandomPercent(Player *player);
 
-extern void enterRainbowBridgeToHeaven(Player *player, Item *heavenItems, int numHeavenItems, Weapon *heavenWeapons,     int numHeavenWeapons);
+extern void enterRainbowBridgeToHeaven(Player *player, Item *heavenItems, int numHeavenItems, Weapon *heavenWeapons, int numHeavenWeapons);
 
-extern void encounterHugeAmountOfEnemies(Player *player, Enemy *enemies, int numEnemies, Item *items, int numItems, W    eapon *weapons, int numWeapons);
+extern void encounterHugeAmountOfEnemies(Player *player, Enemy *enemies, int numEnemies, Item *items, int numItems, Weapon *weapons, int numWeapons);
 
 extern void crossSwitchMatrices(int matrix1[3], int matrix2[5]);
 
-extern void enterLightningStrikeArea(Player *player, Item *lightningItems, int numLightningItems, Weapon *lightningWe    apons, int numLightningWeapons);
+extern void enterLightningStrikeArea(Player *player, Item *lightningItems, int numLightningItems, Weapon *lightningWeapons, int numLightningWeapons);
 
 extern void enterForest(Player *player);
 
@@ -199,7 +199,7 @@ extern void powerOfHeaven(Player *player);
 
 extern void applyTemperatureEffects(Player *player, Enemy *enemies, Boss *boss, int temperature);
 
-extern void playerEnterCampus(Player *player, Shop *shop, Item *enchantedItems, int numEnchantedItems, Weapon *enchan    tedWeapons, int numEnchantedWeapons);
+extern void playerEnterCampus(Player *player, Shop *shop, Item *enchantedItems, int numEnchantedItems, Weapon *enchantedWeapons, int numEnchantedWeapons);
 
 extern void playerRest(Player *player);
 
@@ -211,13 +211,13 @@ extern void playerEncounterBoss(Player *player, Boss *boss);
 
 extern void playerPickUpWeapon(Player *player, Weapon *weapon);
 
-extern void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, Shop *shop, int nu    mItems, int numWeapons);
+extern void playerEncounterNpc(Player *player, Npc *npc, Boss *boss, Item *items, Weapon *weapons, Shop *shop, int numItems, int numWeapons);
 
 extern void playerEnterShop(Player *player, Shop *shop);
 
 extern void playerEnterHome(Player *player, Home *home,int itemIndex);
 
-extern void playerEnterWildy(Player *player, Enemy *enemies, int numEnemies, Npc *npcs, int numNpcs, Item *items, int     numItems, Weapon *weapons, int numWeapons);
+extern void playerEnterWildy(Player *player, Enemy *enemies, int numEnemies, Npc *npcs, int numNpcs, Item *items, int numItems, Weapon *weapons, int numWeapons);
 
 extern void playerPickupItem(Player *player, Item *items, int numItems, Weapon *weapons, int numWeapons);
 
