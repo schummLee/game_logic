@@ -95,6 +95,8 @@ typedef struct { Player *player; Enemy *enemy; Armor *armor; int armorIntParam;
     Helmet *helmet; int helmetIntParam; Item *item; int itemIntParam;} 
 FunctionEncounterEnemyWithHeavyArmorParams;
 
+typedef struct { Player *player; Boss *boss; int numBosses; Item *item; int numLoot; } FunctionGetRandomInfoParams;
+
 typedef struct { Player *player; Boss *boss; int someIntParam; } FunctionDefeatMultiElementBossParams;
 
 typedef struct { Player *player; Enemy *enemy; int someIntParam; Item *item; int anotherIntParam; }
@@ -156,6 +158,8 @@ extern void playerEnterWildy( Player *player,  Enemy *enemies,  int numEnemies, 
 );
 
 extern void playerPickupItem( Player *player, Item *items,  int numItems, Weapon *weapons,  int numWeapons);
+
+extern void enterColdArea(Player *player, Enemy *enemy, Item *item, int numLoot, DayTime timeOfDay);
 
 extern void enterDesert(Player *player, Enemy *enemies, int numEnemies, Item *item, int numLoot, DayTime timeOfDay);
 
