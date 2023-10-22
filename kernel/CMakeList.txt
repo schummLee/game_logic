@@ -1,0 +1,8 @@
+# Define the kernel library
+add_library(kernel kernel.c)
+
+# Make sure it links to logic
+target_link_libraries(kernel logic)
+
+# Specify its public include directories
+target_include_directories(kernel PUBLIC ${PROJECT_SOURCE_DIR}/include)
